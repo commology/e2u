@@ -1,0 +1,12 @@
+{application, e2u,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { e2u_app, []}},
+  {env, []}
+ ]}.
