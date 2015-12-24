@@ -1,7 +1,7 @@
 {application, e2u,
  [
-  {description, ""},
-  {vsn, "1"},
+  {description, "e2u"},
+  {vsn, "0.0.1"},
   {registered, []},
   {applications, [
                   kernel,
