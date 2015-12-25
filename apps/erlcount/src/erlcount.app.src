@@ -1,10 +1,10 @@
 {application, erlcount,
  [
-  {description, "erlcount"},
+  {description, "Run regular expressions on Erlang source files"},
   {vsn, "1.0.0"},
   {modules, [erlcount, erlcount_sup, erlcount_lib, erlcount_dispatch, erlcount_counter]}, 
   {registered, [erlcount]},
-  {applications, [ppool]},
+  {applications, [kernel, stdlib, ppool]},
   {mod, {erlcount, []}},
   {env, [
          {directory, "."},

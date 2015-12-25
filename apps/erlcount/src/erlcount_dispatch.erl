@@ -67,7 +67,7 @@ handle_sync_event(Event, _From, State, Data) ->
     {next_state, State, Data}.
 
 terminate(_Reason, _State, _Data) ->
-    ok.
+    init:stop().
 
 code_change(_OldVsn, State, Data, _Extra) ->
     {ok, State, Data}.
