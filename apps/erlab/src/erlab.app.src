@@ -1,0 +1,23 @@
+{application, erlab, [
+    {description, "Erlang lab"},
+    {vsn, "0.1.0"},
+    {modules, [
+        sensor
+    ]},
+    {registered, [
+        sensor
+    ]},
+    {applications, [
+        kernel,
+        stdlib,
+        sensor
+    ]},
+    {mod, {sensor, []}},
+    {env, [
+        {directory, "."},
+        {regex, ["if\\s.+->", "case\\s.+\\sof"]},
+        {max_files, 10}
+    ]},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+]}.

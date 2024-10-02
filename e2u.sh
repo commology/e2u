@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 APP_ROOT_DIR=`dirname $0`
 cd $APP_ROOT_DIR
